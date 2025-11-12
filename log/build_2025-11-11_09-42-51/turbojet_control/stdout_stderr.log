@@ -1,0 +1,44 @@
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found serial_driver: 1.2.0 (/opt/ros/humble/share/serial_driver/cmake)
+-- Found asio_cmake_module: 1.2.0 (/opt/ros/humble/share/asio_cmake_module/cmake)
+-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/ymzz-tec/code/ros2_serial_control/src/turbojet_control/include
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ymzz-tec/code/ros2_serial_control/build/turbojet_control
+[35m[1mConsolidate compiler generated dependencies of target signal_generator[0m
+[35m[1mConsolidate compiler generated dependencies of target serial_comm[0m
+[ 50%] Built target signal_generator
+[ 75%] [32mBuilding CXX object CMakeFiles/serial_comm.dir/src/serial_comm.cpp.o[0m
+[01m[K/home/ymzz-tec/code/ros2_serial_control/src/turbojet_control/src/serial_comm.cpp:[m[K In constructor ‘[01m[Kturbojet_control::SerialComm::SerialComm(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/ymzz-tec/code/ros2_serial_control/src/turbojet_control/src/serial_comm.cpp:21:33:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kturbojet_control::SerialComm[m[K’ does not have any field named ‘[01m[Kio_context_[m[K’
+   21 | : Node("serial_comm", options), [01;31m[Kio_context_[m[K(std::make_shared<drivers::common::IoContext>(2)), serial_port_(nullptr)
+      |                                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ymzz-tec/code/ros2_serial_control/src/turbojet_control/src/serial_comm.cpp:[m[K In member function ‘[01m[Kbool turbojet_control::SerialComm::open_serial_port()[m[K’:
+[01m[K/home/ymzz-tec/code/ros2_serial_control/src/turbojet_control/src/serial_comm.cpp:136:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kio_context_[m[K’ was not declared in this scope; did you mean ‘[01m[KIoContext[m[K’?
+  136 |       *[01;31m[Kio_context_[m[K,
+      |        [01;31m[K^~~~~~~~~~~[m[K
+      |        [32m[KIoContext[m[K
+gmake[2]: *** [CMakeFiles/serial_comm.dir/build.make:76：CMakeFiles/serial_comm.dir/src/serial_comm.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:165：CMakeFiles/serial_comm.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

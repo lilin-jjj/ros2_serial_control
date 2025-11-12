@@ -1,0 +1,32 @@
+[35m[1mConsolidate compiler generated dependencies of target serial_comm[0m
+[ 50%] Built target signal_generator
+[ 75%] [32mBuilding CXX object CMakeFiles/serial_comm.dir/src/serial_comm.cpp.o[0m
+[100%] [32m[1mLinking CXX executable serial_comm[0m
+[100%] Built target serial_comm
+-- Install configuration: ""
+-- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/lib/turbojet_control/signal_generator
+-- Set runtime path of "/home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/lib/turbojet_control/signal_generator" to ""
+-- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/lib/turbojet_control/serial_comm
+-- Set runtime path of "/home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/lib/turbojet_control/serial_comm" to ""
+-- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/turbojet_control//launch
+-- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/turbojet_control//launch/turbojet_control.launch.py
+-- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/turbojet_control//params
+-- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/turbojet_control//params/serial_params.yaml
+-- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/include/turbojet_control
+-- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/include/turbojet_control/signal_generator.hpp
+-- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/include/turbojet_control/serial_comm.hpp
+-- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/ament_index/resource_index/package_run_dependencies/turbojet_control
+-- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/ament_index/resource_index/parent_prefix_path/turbojet_control
+-- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/turbojet_control/environment/ament_prefix_path.sh
+-- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/turbojet_control/environment/ament_prefix_path.dsv
+-- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/turbojet_control/environment/path.sh
+-- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/turbojet_control/environment/path.dsv
+-- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/turbojet_control/local_setup.bash
+-- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/turbojet_control/local_setup.sh
+-- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/turbojet_control/local_setup.zsh
+-- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/turbojet_control/local_setup.dsv
+-- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/turbojet_control/package.dsv
+-- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/ament_index/resource_index/packages/turbojet_control
+-- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/turbojet_control/cmake/turbojet_controlConfig.cmake
+-- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/turbojet_control/cmake/turbojet_controlConfig-version.cmake
+-- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/turbojet_control/package.xml

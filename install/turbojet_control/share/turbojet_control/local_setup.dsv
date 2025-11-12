@@ -1,0 +1,2 @@
+source;share/turbojet_control/environment/ament_prefix_path.sh
+source;share/turbojet_control/environment/path.sh

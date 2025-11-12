@@ -1,0 +1,7 @@
+[01m[K/home/ymzz-tec/code/ros2_serial_control/src/turbojet_control/src/signal_generator.cpp:[m[K In member function ‘[01m[Kuint16_t turbojet_control::SignalGenerator::horizontal_transition(double, double)[m[K’:
+[01m[K/home/ymzz-tec/code/ros2_serial_control/src/turbojet_control/src/signal_generator.cpp:251:56:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kt[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  251 | uint16_t SignalGenerator::horizontal_transition([01;35m[Kdouble t[m[K, double time_offset)
+      |                                                 [01;35m[K~~~~~~~^[m[K
+[01m[K/home/ymzz-tec/code/ros2_serial_control/src/turbojet_control/src/signal_generator.cpp:251:66:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktime_offset[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  251 | uint16_t SignalGenerator::horizontal_transition(double t, [01;35m[Kdouble time_offset[m[K)
+      |                                                           [01;35m[K~~~~~~~^~~~~~~~~~~[m[K

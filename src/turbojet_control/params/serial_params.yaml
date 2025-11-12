@@ -1,0 +1,4 @@
+serial_comm:
+  ros__parameters:
+    port_name: "/dev/ttyUSB0"
+    baud_rate: 9600

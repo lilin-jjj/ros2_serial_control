@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-e1e2c67bc16b01e4ff2a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "turbojet_control",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "serial_comm::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-serial_comm-c8d6ad71793ce0827bdb.json",
+					"name" : "serial_comm",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "signal_generator::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-signal_generator-ff267b19c71fb7527bcd.json",
+					"name" : "signal_generator",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "turbojet_control_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-turbojet_control_uninstall-d18499a82b6e43ffd353.json",
+					"name" : "turbojet_control_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-2989b4c2286344ff2415.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ymzz-tec/code/ros2_serial_control/build/turbojet_control",
+		"source" : "/home/ymzz-tec/code/ros2_serial_control/src/turbojet_control"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

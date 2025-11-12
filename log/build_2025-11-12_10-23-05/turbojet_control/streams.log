@@ -1,0 +1,42 @@
+[0.007s] Invoking command in '/home/ymzz-tec/code/ros2_serial_control/build/turbojet_control': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ymzz-tec/code/ros2_serial_control/build/turbojet_control -- -j10 -l10
+[0.062s] [35m[1mConsolidate compiler generated dependencies of target serial_comm[0m
+[0.076s] [ 25%] [32mBuilding CXX object CMakeFiles/signal_generator.dir/src/signal_generator.cpp.o[0m
+[0.076s] [ 75%] Built target serial_comm
+[1.256s] [01m[K/home/ymzz-tec/code/ros2_serial_control/src/turbojet_control/src/signal_generator.cpp:[m[K In member function ‘[01m[Kuint16_t turbojet_control::SignalGenerator::horizontal_transition(double, double)[m[K’:
+[1.256s] [01m[K/home/ymzz-tec/code/ros2_serial_control/src/turbojet_control/src/signal_generator.cpp:251:56:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kt[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.256s]   251 | uint16_t SignalGenerator::horizontal_transition([01;35m[Kdouble t[m[K, double time_offset)
+[1.256s]       |                                                 [01;35m[K~~~~~~~^[m[K
+[1.256s] [01m[K/home/ymzz-tec/code/ros2_serial_control/src/turbojet_control/src/signal_generator.cpp:251:66:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktime_offset[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.256s]   251 | uint16_t SignalGenerator::horizontal_transition(double t, [01;35m[Kdouble time_offset[m[K)
+[1.256s]       |                                                           [01;35m[K~~~~~~~^~~~~~~~~~~[m[K
+[4.275s] [100%] [32m[1mLinking CXX executable signal_generator[0m
+[4.511s] [100%] Built target signal_generator
+[4.527s] Invoked command in '/home/ymzz-tec/code/ros2_serial_control/build/turbojet_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ymzz-tec/code/ros2_serial_control/build/turbojet_control -- -j10 -l10
+[4.534s] Invoking command in '/home/ymzz-tec/code/ros2_serial_control/build/turbojet_control': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/ymzz-tec/code/ros2_serial_control/build/turbojet_control
+[4.538s] -- Install configuration: ""
+[4.539s] -- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/lib/turbojet_control/signal_generator
+[4.540s] -- Set runtime path of "/home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/lib/turbojet_control/signal_generator" to ""
+[4.541s] -- Up-to-date: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/lib/turbojet_control/serial_comm
+[4.541s] -- Up-to-date: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/turbojet_control//launch
+[4.541s] -- Up-to-date: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/turbojet_control//launch/turbojet_control.launch.py
+[4.541s] -- Up-to-date: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/turbojet_control//params
+[4.541s] -- Up-to-date: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/turbojet_control//params/serial_params.yaml
+[4.541s] -- Up-to-date: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/include/turbojet_control
+[4.541s] -- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/include/turbojet_control/signal_generator.hpp
+[4.541s] -- Up-to-date: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/include/turbojet_control/serial_comm.hpp
+[4.541s] -- Up-to-date: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/ament_index/resource_index/package_run_dependencies/turbojet_control
+[4.541s] -- Up-to-date: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/ament_index/resource_index/parent_prefix_path/turbojet_control
+[4.541s] -- Up-to-date: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/turbojet_control/environment/ament_prefix_path.sh
+[4.541s] -- Up-to-date: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/turbojet_control/environment/ament_prefix_path.dsv
+[4.541s] -- Up-to-date: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/turbojet_control/environment/path.sh
+[4.541s] -- Up-to-date: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/turbojet_control/environment/path.dsv
+[4.541s] -- Up-to-date: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/turbojet_control/local_setup.bash
+[4.541s] -- Up-to-date: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/turbojet_control/local_setup.sh
+[4.541s] -- Up-to-date: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/turbojet_control/local_setup.zsh
+[4.541s] -- Up-to-date: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/turbojet_control/local_setup.dsv
+[4.541s] -- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/turbojet_control/package.dsv
+[4.542s] -- Up-to-date: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/ament_index/resource_index/packages/turbojet_control
+[4.542s] -- Up-to-date: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/turbojet_control/cmake/turbojet_controlConfig.cmake
+[4.542s] -- Up-to-date: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/turbojet_control/cmake/turbojet_controlConfig-version.cmake
+[4.542s] -- Up-to-date: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/turbojet_control/package.xml
+[4.543s] Invoked command in '/home/ymzz-tec/code/ros2_serial_control/build/turbojet_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/ymzz-tec/code/ros2_serial_control/build/turbojet_control

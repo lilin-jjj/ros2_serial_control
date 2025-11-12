@@ -1,0 +1,20 @@
+[01m[K/home/ymzz-tec/code/ros2_serial_control/src/turbojet_control/src/signal_generator.cpp:[m[K In member function ‘[01m[Kuint16_t turbojet_control::SignalGenerator::horizontal_transition(double, double)[m[K’:
+[01m[K/home/ymzz-tec/code/ros2_serial_control/src/turbojet_control/src/signal_generator.cpp:163:56:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kt[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  163 | uint16_t SignalGenerator::horizontal_transition([01;35m[Kdouble t[m[K, double time_offset)
+      |                                                 [01;35m[K~~~~~~~^[m[K
+[01m[K/home/ymzz-tec/code/ros2_serial_control/src/turbojet_control/src/signal_generator.cpp:163:66:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktime_offset[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  163 | 6_t SignalGenerator::horizontal_transition(double t, [01;35m[Kdouble time_offset[m[K)
+      |                                                      [01;35m[K~~~~~~~^~~~~~~~~~~[m[K
+
+[01m[K/home/ymzz-tec/code/ros2_serial_control/src/turbojet_control/src/serial_comm.cpp:[m[K In constructor ‘[01m[Kturbojet_control::SerialComm::SerialComm(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/ymzz-tec/code/ros2_serial_control/src/turbojet_control/src/serial_comm.cpp:21:33:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kturbojet_control::SerialComm[m[K’ does not have any field named ‘[01m[Kio_context_[m[K’
+   21 | : Node("serial_comm", options), [01;31m[Kio_context_[m[K(std::make_shared<drivers::common::IoContext>(2)), serial_port_(nullptr)
+      |                                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ymzz-tec/code/ros2_serial_control/src/turbojet_control/src/serial_comm.cpp:[m[K In member function ‘[01m[Kbool turbojet_control::SerialComm::open_serial_port()[m[K’:
+[01m[K/home/ymzz-tec/code/ros2_serial_control/src/turbojet_control/src/serial_comm.cpp:136:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kio_context_[m[K’ was not declared in this scope; did you mean ‘[01m[KIoContext[m[K’?
+  136 |       *[01;31m[Kio_context_[m[K,
+      |        [01;31m[K^~~~~~~~~~~[m[K
+      |        [32m[KIoContext[m[K
+gmake[2]: *** [CMakeFiles/serial_comm.dir/build.make:76：CMakeFiles/serial_comm.dir/src/serial_comm.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:165：CMakeFiles/serial_comm.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

@@ -1,0 +1,4 @@
+source;share/turbojet_control/local_setup.bash
+source;share/turbojet_control/local_setup.dsv
+source;share/turbojet_control/local_setup.sh
+source;share/turbojet_control/local_setup.zsh
