@@ -1,6 +1,5 @@
 # ROS2 Turbojet Control System（涡轮喷气发动机控制系统）
 
-这是一个将MATLAB/Simulink涡轮喷气发动机控制系统转换为ROS2/C++的实现。该系统通过`control_command`话题支持**命令驱动**和**时间驱动**两种模式，生成控制信号并通过串口通信发送给电子控制单元(ECU)，同时实时接收并解析ECU的反馈信息。
 
 ## 功能特性
 
