@@ -691,6 +691,11 @@ CMakeFiles/serial_comm.dir/src/serial_comm.cpp.o: /home/ymzz-tec/code/ros2_seria
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/u_int16__traits.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/u_int16__type_support.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/string.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__struct.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__builder.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__traits.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__type_support.hpp \
   /opt/ros/humble/include/serial_driver/serial_port.hpp \
   /opt/ros/humble/include/io_context/common.hpp \
   /usr/include/asio.hpp \
@@ -1398,6 +1403,8 @@ CMakeFiles/serial_comm.dir/src/serial_comm.cpp.o: /home/ymzz-tec/code/ros2_seria
 
 /usr/include/asio/ip/basic_resolver_query.hpp:
 
+/usr/include/asio/ip/basic_resolver_entry.hpp:
+
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/time.hpp:
@@ -1507,8 +1514,6 @@ CMakeFiles/serial_comm.dir/src/serial_comm.cpp.o: /home/ymzz-tec/code/ros2_seria
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_stat.h:
-
-/opt/ros/humble/include/rmw/rmw/network_flow_endpoint_array.h:
 
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h:
 
@@ -1662,6 +1667,10 @@ CMakeFiles/serial_comm.dir/src/serial_comm.cpp.o: /home/ymzz-tec/code/ros2_seria
 
 /opt/ros/humble/include/rmw/rmw/event_callback_type.h:
 
+/usr/include/asio/ip/detail/impl/endpoint.ipp:
+
+/opt/ros/humble/include/rcl/rcl/context.h:
+
 /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp:
@@ -1767,6 +1776,8 @@ CMakeFiles/serial_comm.dir/src/serial_comm.cpp.o: /home/ymzz-tec/code/ros2_seria
 /usr/include/asio/impl/thread_pool.hpp:
 
 /opt/ros/humble/include/rmw/rmw/ret_types.h:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/string.hpp:
 
 /opt/ros/humble/include/rmw/rmw/macros.h:
 
@@ -2013,10 +2024,6 @@ CMakeFiles/serial_comm.dir/src/serial_comm.cpp.o: /home/ymzz-tec/code/ros2_seria
 /usr/include/c++/11/new:
 
 /usr/include/asio/executor_work_guard.hpp:
-
-/opt/ros/humble/include/rcl/rcl/context.h:
-
-/usr/include/asio/ip/detail/impl/endpoint.ipp:
 
 /usr/include/c++/11/debug/assertions.h:
 
@@ -2446,6 +2453,10 @@ CMakeFiles/serial_comm.dir/src/serial_comm.cpp.o: /home/ymzz-tec/code/ros2_seria
 
 /usr/include/c++/11/pstl/glue_memory_defs.h:
 
+/usr/include/asio/ip/basic_resolver.hpp:
+
+/usr/include/linux/stat.h:
+
 /usr/include/c++/11/csignal:
 
 /usr/include/c++/11/bits/functional_hash.h:
@@ -2511,8 +2522,6 @@ CMakeFiles/serial_comm.dir/src/serial_comm.cpp.o: /home/ymzz-tec/code/ros2_seria
 /usr/include/x86_64-linux-gnu/bits/sched.h:
 
 /usr/include/c++/11/bits/unordered_map.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/allocator/allocator_deleter.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
@@ -3012,10 +3021,6 @@ CMakeFiles/serial_comm.dir/src/serial_comm.cpp.o: /home/ymzz-tec/code/ros2_seria
 
 /usr/include/asio/detail/array_fwd.hpp:
 
-/usr/include/linux/stat.h:
-
-/usr/include/asio/ip/basic_resolver.hpp:
-
 /opt/ros/humble/include/rclcpp/rclcpp/executors/static_single_threaded_executor.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/executors/static_executor_entities_collector.hpp:
@@ -3128,6 +3133,22 @@ CMakeFiles/serial_comm.dir/src/serial_comm.cpp.o: /home/ymzz-tec/code/ros2_seria
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__struct.hpp:
+
+/usr/include/x86_64-linux-gnu/asm/posix_types.h:
+
+/opt/ros/humble/include/rmw/rmw/network_flow_endpoint_array.h:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__traits.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/allocator/allocator_deleter.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__type_support.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/sigevent-consts.h:
+
+/usr/include/asio/traits/execute_member.hpp:
+
 /opt/ros/humble/include/serial_driver/serial_port.hpp:
 
 /usr/include/signal.h:
@@ -3153,6 +3174,10 @@ CMakeFiles/serial_comm.dir/src/serial_comm.cpp.o: /home/ymzz-tec/code/ros2_seria
 /usr/include/asio/associated_allocator.hpp:
 
 /usr/include/asm-generic/bitsperlong.h:
+
+/usr/include/asio/ip/basic_resolver_iterator.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h:
 
 /usr/include/asio/detail/type_traits.hpp:
 
@@ -3185,10 +3210,6 @@ CMakeFiles/serial_comm.dir/src/serial_comm.cpp.o: /home/ymzz-tec/code/ros2_seria
 /usr/include/asio/detail/resolver_service.hpp:
 
 /usr/include/asio/traits/set_error_member.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/sigevent-consts.h:
-
-/usr/include/asio/traits/execute_member.hpp:
 
 /usr/include/asio/traits/execute_free.hpp:
 
@@ -3370,13 +3391,13 @@ CMakeFiles/serial_comm.dir/src/serial_comm.cpp.o: /home/ymzz-tec/code/ros2_seria
 
 /usr/include/asio/detail/reactive_socket_accept_op.hpp:
 
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__builder.hpp:
+
 /usr/include/linux/stddef.h:
 
 /usr/include/c++/11/exception:
 
 /usr/include/asio/impl/connect.hpp:
-
-/usr/include/x86_64-linux-gnu/asm/posix_types.h:
 
 /opt/ros/humble/include/tracetools/tracetools/utils.hpp:
 
@@ -3677,9 +3698,3 @@ CMakeFiles/serial_comm.dir/src/serial_comm.cpp.o: /home/ymzz-tec/code/ros2_seria
 /usr/include/asio/ip/network_v6.hpp:
 
 /usr/include/asio/ip/detail/endpoint.hpp:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h:
-
-/usr/include/asio/ip/basic_resolver_iterator.hpp:
-
-/usr/include/asio/ip/basic_resolver_entry.hpp:

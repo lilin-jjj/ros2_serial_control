@@ -1,3 +1,6 @@
 {
-    "cmake.sourceDirectory": "/home/ymzz-tec/code/ros2_serial_control/src/turbojet_control"
+    "cmake.sourceDirectory": "/home/ymzz-tec/code/ros2_serial_control/src/turbojet_control",
+    "python-envs.defaultEnvManager": "ms-python.python:conda",
+    "python-envs.defaultPackageManager": "ms-python.python:conda",
+    "python-envs.pythonProjects": []
 }

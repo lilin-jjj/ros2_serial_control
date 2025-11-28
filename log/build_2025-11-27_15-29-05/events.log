@@ -1,0 +1,625 @@
+[0.000000] (-) TimerEvent: {}
+[0.000375] (turbojet_control) JobQueued: {'identifier': 'turbojet_control', 'dependencies': OrderedDict()}
+[0.000396] (turbojet_control) JobStarted: {'identifier': 'turbojet_control'}
+[0.006506] (turbojet_control) JobProgress: {'identifier': 'turbojet_control', 'progress': 'cmake'}
+[0.006805] (turbojet_control) Command: {'cmd': ['/usr/bin/cmake', '/home/ymzz-tec/code/ros2_serial_control/src/turbojet_control', '-DCMAKE_INSTALL_PREFIX=/home/ymzz-tec/code/ros2_serial_control/install/turbojet_control'], 'cwd': '/home/ymzz-tec/code/ros2_serial_control/build/turbojet_control', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7897/'), ('no_proxy', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('LANGUAGE', 'zh_CN:zh:en_US:en'), ('USER', 'ymzz-tec'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks://127.0.0.1:7897/'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ymzz-tec'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('TERM_PROGRAM_VERSION', '1.105.1'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1775'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=5039232659dfe0aeb45ba8266923aabb'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7897/'), ('COLCON_PREFIX_PATH', '/home/ymzz-tec/code/ros2_serial_control/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'ymzz-tec'), ('ALL_PROXY', 'socks://127.0.0.1:7897/'), ('http_proxy', 'http://127.0.0.1:7897/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ymzz-tec'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/ymzz-tec/anaconda3/condabin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/ymzz-tec/.config/Code/User/globalStorage/github.copilot-chat/debugCommand'), ('SESSION_MANAGER', 'local/ymzztec:@/tmp/.ICE-unix/1775,unix/ymzztec:/tmp/.ICE-unix/1775'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('ftp_proxy', 'http://127.0.0.1:7890/'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a0d76916_3234_448d_8842_8ed7ca874082'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PYTHONSTARTUP', '/home/ymzz-tec/.config/Code/User/workspaceStorage/76f978c88a4a9b8062e2416ede6ad218/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-8e8c525e24.sock'), ('GNOME_TERMINAL_SERVICE', ':1.91'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ymzz-tec/code/ros2_serial_control/install/turbojet_control:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/ymzz-tec/anaconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/ymzz-tec/code/ros2_serial_control/build/turbojet_control'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/ymzz-tec/anaconda3/bin/conda'), ('CLUTTER_IM_MODULE', 'xim'), ('FTP_PROXY', 'http://127.0.0.1:7890/'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=5039232659dfe0aeb45ba8266923aabb'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7897/'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ymzz-tec/code/ros2_serial_control/install/turbojet_control:/opt/ros/humble')]), 'shell': False}
+[0.099844] (-) TimerEvent: {}
+[0.148191] (turbojet_control) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.199942] (-) TimerEvent: {}
+[0.225601] (turbojet_control) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.234119] (turbojet_control) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.289596] (turbojet_control) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.293879] (turbojet_control) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.294162] (turbojet_control) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.294558] (turbojet_control) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.296442] (turbojet_control) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.300033] (-) TimerEvent: {}
+[0.351597] (turbojet_control) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.356309] (turbojet_control) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.356399] (turbojet_control) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.356523] (turbojet_control) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.362193] (turbojet_control) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.400202] (-) TimerEvent: {}
+[0.460505] (turbojet_control) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.500290] (-) TimerEvent: {}
+[0.525620] (turbojet_control) StdoutLine: {'line': b'-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.555680] (turbojet_control) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.558789] (turbojet_control) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.564240] (turbojet_control) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.572573] (turbojet_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.582949] (turbojet_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.600385] (-) TimerEvent: {}
+[0.614085] (turbojet_control) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.615727] (turbojet_control) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.677445] (turbojet_control) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.694006] (turbojet_control) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.700496] (-) TimerEvent: {}
+[0.716548] (turbojet_control) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.722117] (turbojet_control) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.779651] (turbojet_control) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.779789] (turbojet_control) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.800739] (-) TimerEvent: {}
+[0.827965] (turbojet_control) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.828728] (turbojet_control) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.863172] (turbojet_control) StdoutLine: {'line': b'-- Found serial_driver: 1.2.0 (/opt/ros/humble/share/serial_driver/cmake)\n'}
+[0.877051] (turbojet_control) StdoutLine: {'line': b'-- Found asio_cmake_module: 1.2.0 (/opt/ros/humble/share/asio_cmake_module/cmake)\n'}
+[0.878022] (turbojet_control) StdoutLine: {'line': b'-- Found ASIO: /usr/include  \n'}
+[0.900834] (-) TimerEvent: {}
+[0.920209] (turbojet_control) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.982707] (turbojet_control) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[0.983675] (turbojet_control) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.983746] (turbojet_control) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/ymzz-tec/code/ros2_serial_control/src/turbojet_control/include\n'}
+[0.983775] (turbojet_control) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.984460] (turbojet_control) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[0.984501] (turbojet_control) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[0.984665] (turbojet_control) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[0.985176] (turbojet_control) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.985659] (turbojet_control) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[0.986326] (turbojet_control) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.986368] (turbojet_control) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.986652] (turbojet_control) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.989599] (turbojet_control) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.000951] (-) TimerEvent: {}
+[1.030491] (turbojet_control) StdoutLine: {'line': b'-- Generating done\n'}
+[1.033175] (turbojet_control) StdoutLine: {'line': b'-- Build files have been written to: /home/ymzz-tec/code/ros2_serial_control/build/turbojet_control\n'}
+[1.040714] (turbojet_control) CommandEnded: {'returncode': 0}
+[1.041720] (turbojet_control) JobProgress: {'identifier': 'turbojet_control', 'progress': 'build'}
+[1.041754] (turbojet_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ymzz-tec/code/ros2_serial_control/build/turbojet_control', '--', '-j10', '-l10'], 'cwd': '/home/ymzz-tec/code/ros2_serial_control/build/turbojet_control', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7897/'), ('no_proxy', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('LANGUAGE', 'zh_CN:zh:en_US:en'), ('USER', 'ymzz-tec'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks://127.0.0.1:7897/'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ymzz-tec'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('TERM_PROGRAM_VERSION', '1.105.1'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1775'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=5039232659dfe0aeb45ba8266923aabb'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7897/'), ('COLCON_PREFIX_PATH', '/home/ymzz-tec/code/ros2_serial_control/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'ymzz-tec'), ('ALL_PROXY', 'socks://127.0.0.1:7897/'), ('http_proxy', 'http://127.0.0.1:7897/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ymzz-tec'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/ymzz-tec/anaconda3/condabin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/ymzz-tec/.config/Code/User/globalStorage/github.copilot-chat/debugCommand'), ('SESSION_MANAGER', 'local/ymzztec:@/tmp/.ICE-unix/1775,unix/ymzztec:/tmp/.ICE-unix/1775'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('ftp_proxy', 'http://127.0.0.1:7890/'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a0d76916_3234_448d_8842_8ed7ca874082'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PYTHONSTARTUP', '/home/ymzz-tec/.config/Code/User/workspaceStorage/76f978c88a4a9b8062e2416ede6ad218/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-8e8c525e24.sock'), ('GNOME_TERMINAL_SERVICE', ':1.91'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ymzz-tec/code/ros2_serial_control/install/turbojet_control:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/ymzz-tec/anaconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/ymzz-tec/code/ros2_serial_control/build/turbojet_control'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/ymzz-tec/anaconda3/bin/conda'), ('CLUTTER_IM_MODULE', 'xim'), ('FTP_PROXY', 'http://127.0.0.1:7890/'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=5039232659dfe0aeb45ba8266923aabb'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7897/'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ymzz-tec/code/ros2_serial_control/install/turbojet_control:/opt/ros/humble')]), 'shell': False}
+[1.079316] (turbojet_control) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/signal_generator.dir/src/signal_generator.cpp.o\x1b[0m\n'}
+[1.101029] (-) TimerEvent: {}
+[1.201270] (-) TimerEvent: {}
+[1.301507] (-) TimerEvent: {}
+[1.401744] (-) TimerEvent: {}
+[1.501988] (-) TimerEvent: {}
+[1.603317] (-) TimerEvent: {}
+[1.703582] (-) TimerEvent: {}
+[1.803836] (-) TimerEvent: {}
+[1.904073] (-) TimerEvent: {}
+[2.004799] (-) TimerEvent: {}
+[2.105275] (-) TimerEvent: {}
+[2.211519] (-) TimerEvent: {}
+[2.326111] (-) TimerEvent: {}
+[2.443764] (-) TimerEvent: {}
+[2.550354] (turbojet_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ymzz-tec/code/ros2_serial_control/src/turbojet_control/src/signal_generator.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kuint16_t turbojet_control::SignalGenerator::horizontal_transition(double, double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.554525] (-) TimerEvent: {}
+[2.559241] (turbojet_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ymzz-tec/code/ros2_serial_control/src/turbojet_control/src/signal_generator.cpp:251:56:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kt\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.559352] (turbojet_control) StderrLine: {'line': b'  251 | uint16_t SignalGenerator::horizontal_transition(\x1b[01;35m\x1b[Kdouble t\x1b[m\x1b[K, double time_offset)\n'}
+[2.559384] (turbojet_control) StderrLine: {'line': b'      |                                                 \x1b[01;35m\x1b[K~~~~~~~^\x1b[m\x1b[K\n'}
+[2.559409] (turbojet_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ymzz-tec/code/ros2_serial_control/src/turbojet_control/src/signal_generator.cpp:251:66:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktime_offset\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.559433] (turbojet_control) StderrLine: {'line': b'  251 | uint16_t SignalGenerator::horizontal_transition(double t, \x1b[01;35m\x1b[Kdouble time_offset\x1b[m\x1b[K)\n'}
+[2.559459] (turbojet_control) StderrLine: {'line': b'      |                                                           \x1b[01;35m\x1b[K~~~~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.664988] (-) TimerEvent: {}
+[2.783172] (-) TimerEvent: {}
+[2.899944] (-) TimerEvent: {}
+[3.017766] (-) TimerEvent: {}
+[3.144425] (-) TimerEvent: {}
+[3.274422] (-) TimerEvent: {}
+[3.403687] (-) TimerEvent: {}
+[3.534374] (-) TimerEvent: {}
+[3.667315] (-) TimerEvent: {}
+[3.791866] (-) TimerEvent: {}
+[3.929292] (-) TimerEvent: {}
+[4.068779] (-) TimerEvent: {}
+[4.205595] (-) TimerEvent: {}
+[4.369175] (-) TimerEvent: {}
+[4.505196] (-) TimerEvent: {}
+[4.656139] (-) TimerEvent: {}
+[4.846986] (-) TimerEvent: {}
+[4.982852] (-) TimerEvent: {}
+[5.112447] (-) TimerEvent: {}
+[5.243213] (-) TimerEvent: {}
+[5.367867] (-) TimerEvent: {}
+[5.502114] (-) TimerEvent: {}
+[5.622866] (-) TimerEvent: {}
+[5.754618] (-) TimerEvent: {}
+[5.884257] (-) TimerEvent: {}
+[6.029288] (-) TimerEvent: {}
+[6.158257] (-) TimerEvent: {}
+[6.284497] (-) TimerEvent: {}
+[6.413769] (-) TimerEvent: {}
+[6.533777] (-) TimerEvent: {}
+[6.661595] (-) TimerEvent: {}
+[6.787726] (-) TimerEvent: {}
+[6.909996] (-) TimerEvent: {}
+[7.040240] (-) TimerEvent: {}
+[7.245289] (-) TimerEvent: {}
+[7.397980] (-) TimerEvent: {}
+[7.548517] (-) TimerEvent: {}
+[7.701998] (-) TimerEvent: {}
+[7.828606] (-) TimerEvent: {}
+[7.953281] (-) TimerEvent: {}
+[8.078565] (-) TimerEvent: {}
+[8.227934] (-) TimerEvent: {}
+[8.449647] (-) TimerEvent: {}
+[8.595190] (-) TimerEvent: {}
+[8.721331] (-) TimerEvent: {}
+[8.846679] (-) TimerEvent: {}
+[8.984103] (-) TimerEvent: {}
+[9.120752] (-) TimerEvent: {}
+[9.337856] (-) TimerEvent: {}
+[9.472956] (-) TimerEvent: {}
+[9.639238] (-) TimerEvent: {}
+[9.898767] (-) TimerEvent: {}
+[10.036605] (-) TimerEvent: {}
+[10.311763] (-) TimerEvent: {}
+[10.517698] (-) TimerEvent: {}
+[10.755744] (-) TimerEvent: {}
+[11.030280] (-) TimerEvent: {}
+[11.321752] (-) TimerEvent: {}
+[11.545252] (-) TimerEvent: {}
+[11.796519] (-) TimerEvent: {}
+[12.019454] (-) TimerEvent: {}
+[12.235400] (-) TimerEvent: {}
+[12.593270] (-) TimerEvent: {}
+[12.748459] (-) TimerEvent: {}
+[12.917035] (-) TimerEvent: {}
+[13.051265] (-) TimerEvent: {}
+[13.217493] (-) TimerEvent: {}
+[13.464863] (-) TimerEvent: {}
+[13.632369] (-) TimerEvent: {}
+[13.906902] (-) TimerEvent: {}
+[14.098568] (-) TimerEvent: {}
+[14.368652] (-) TimerEvent: {}
+[14.752343] (-) TimerEvent: {}
+[14.916945] (-) TimerEvent: {}
+[15.171431] (-) TimerEvent: {}
+[15.389266] (-) TimerEvent: {}
+[15.525125] (-) TimerEvent: {}
+[15.774368] (-) TimerEvent: {}
+[16.074571] (-) TimerEvent: {}
+[16.363473] (-) TimerEvent: {}
+[16.592822] (-) TimerEvent: {}
+[16.840377] (-) TimerEvent: {}
+[17.067468] (-) TimerEvent: {}
+[17.356642] (-) TimerEvent: {}
+[17.540423] (-) TimerEvent: {}
+[17.764370] (-) TimerEvent: {}
+[18.062124] (-) TimerEvent: {}
+[18.232807] (-) TimerEvent: {}
+[18.410550] (-) TimerEvent: {}
+[18.687248] (-) TimerEvent: {}
+[18.953624] (-) TimerEvent: {}
+[19.098745] (-) TimerEvent: {}
+[19.380806] (-) TimerEvent: {}
+[19.696986] (-) TimerEvent: {}
+[19.979590] (-) TimerEvent: {}
+[20.219944] (-) TimerEvent: {}
+[20.398749] (-) TimerEvent: {}
+[20.593884] (-) TimerEvent: {}
+[20.837697] (-) TimerEvent: {}
+[21.092461] (-) TimerEvent: {}
+[21.432035] (-) TimerEvent: {}
+[21.735918] (-) TimerEvent: {}
+[21.949789] (-) TimerEvent: {}
+[22.222137] (-) TimerEvent: {}
+[22.509705] (-) TimerEvent: {}
+[22.817377] (-) TimerEvent: {}
+[23.079251] (-) TimerEvent: {}
+[23.337050] (-) TimerEvent: {}
+[23.650119] (-) TimerEvent: {}
+[23.928564] (-) TimerEvent: {}
+[24.105031] (-) TimerEvent: {}
+[24.400190] (-) TimerEvent: {}
+[24.667241] (-) TimerEvent: {}
+[24.964940] (-) TimerEvent: {}
+[25.235398] (-) TimerEvent: {}
+[25.625149] (-) TimerEvent: {}
+[25.980809] (-) TimerEvent: {}
+[26.294295] (-) TimerEvent: {}
+[26.638296] (-) TimerEvent: {}
+[27.030908] (-) TimerEvent: {}
+[27.411031] (-) TimerEvent: {}
+[27.900464] (-) TimerEvent: {}
+[28.234711] (-) TimerEvent: {}
+[28.591693] (-) TimerEvent: {}
+[28.988062] (-) TimerEvent: {}
+[29.175014] (-) TimerEvent: {}
+[29.429531] (-) TimerEvent: {}
+[29.574337] (-) TimerEvent: {}
+[29.757529] (-) TimerEvent: {}
+[29.935350] (-) TimerEvent: {}
+[30.105243] (-) TimerEvent: {}
+[30.271475] (-) TimerEvent: {}
+[30.427232] (-) TimerEvent: {}
+[30.561848] (-) TimerEvent: {}
+[30.710793] (-) TimerEvent: {}
+[30.895887] (-) TimerEvent: {}
+[31.123879] (-) TimerEvent: {}
+[31.304634] (-) TimerEvent: {}
+[31.619503] (-) TimerEvent: {}
+[31.786765] (-) TimerEvent: {}
+[31.953616] (-) TimerEvent: {}
+[32.114167] (-) TimerEvent: {}
+[32.260199] (-) TimerEvent: {}
+[32.404448] (-) TimerEvent: {}
+[32.582497] (-) TimerEvent: {}
+[32.726543] (-) TimerEvent: {}
+[32.985605] (-) TimerEvent: {}
+[33.154904] (-) TimerEvent: {}
+[33.425609] (-) TimerEvent: {}
+[33.761992] (-) TimerEvent: {}
+[33.974011] (-) TimerEvent: {}
+[34.185926] (-) TimerEvent: {}
+[34.526010] (-) TimerEvent: {}
+[34.795370] (-) TimerEvent: {}
+[35.071275] (-) TimerEvent: {}
+[35.312006] (-) TimerEvent: {}
+[35.575091] (-) TimerEvent: {}
+[35.729733] (-) TimerEvent: {}
+[35.868326] (-) TimerEvent: {}
+[36.040938] (-) TimerEvent: {}
+[36.224546] (-) TimerEvent: {}
+[36.500834] (-) TimerEvent: {}
+[36.917274] (-) TimerEvent: {}
+[37.174923] (-) TimerEvent: {}
+[37.459123] (-) TimerEvent: {}
+[37.746265] (-) TimerEvent: {}
+[37.926141] (-) TimerEvent: {}
+[38.160678] (-) TimerEvent: {}
+[38.314057] (-) TimerEvent: {}
+[38.486727] (-) TimerEvent: {}
+[38.707896] (-) TimerEvent: {}
+[38.858119] (-) TimerEvent: {}
+[39.103630] (-) TimerEvent: {}
+[39.427493] (-) TimerEvent: {}
+[39.690955] (-) TimerEvent: {}
+[39.935661] (-) TimerEvent: {}
+[40.188291] (-) TimerEvent: {}
+[40.483748] (-) TimerEvent: {}
+[40.765737] (-) TimerEvent: {}
+[41.002636] (-) TimerEvent: {}
+[41.239883] (-) TimerEvent: {}
+[41.524950] (-) TimerEvent: {}
+[41.816858] (-) TimerEvent: {}
+[42.107154] (-) TimerEvent: {}
+[42.360927] (-) TimerEvent: {}
+[42.598703] (-) TimerEvent: {}
+[42.879259] (-) TimerEvent: {}
+[43.150070] (-) TimerEvent: {}
+[43.394631] (-) TimerEvent: {}
+[43.650247] (-) TimerEvent: {}
+[43.894151] (-) TimerEvent: {}
+[44.165421] (-) TimerEvent: {}
+[44.341491] (-) TimerEvent: {}
+[44.576135] (-) TimerEvent: {}
+[44.750114] (-) TimerEvent: {}
+[45.157924] (-) TimerEvent: {}
+[45.569776] (-) TimerEvent: {}
+[45.868511] (-) TimerEvent: {}
+[46.294119] (-) TimerEvent: {}
+[46.748272] (-) TimerEvent: {}
+[47.113032] (-) TimerEvent: {}
+[47.447286] (-) TimerEvent: {}
+[47.938022] (-) TimerEvent: {}
+[48.371077] (-) TimerEvent: {}
+[48.559109] (-) TimerEvent: {}
+[48.821818] (-) TimerEvent: {}
+[49.090401] (-) TimerEvent: {}
+[49.390282] (-) TimerEvent: {}
+[49.722583] (-) TimerEvent: {}
+[49.872591] (-) TimerEvent: {}
+[50.202592] (-) TimerEvent: {}
+[50.510237] (-) TimerEvent: {}
+[50.693096] (-) TimerEvent: {}
+[51.008169] (-) TimerEvent: {}
+[51.408668] (-) TimerEvent: {}
+[51.897561] (-) TimerEvent: {}
+[52.310954] (-) TimerEvent: {}
+[52.803624] (-) TimerEvent: {}
+[53.254398] (-) TimerEvent: {}
+[53.715336] (-) TimerEvent: {}
+[54.045779] (-) TimerEvent: {}
+[54.447999] (-) TimerEvent: {}
+[54.837289] (-) TimerEvent: {}
+[55.155953] (-) TimerEvent: {}
+[55.496126] (-) TimerEvent: {}
+[55.763381] (-) TimerEvent: {}
+[55.946466] (-) TimerEvent: {}
+[56.118295] (-) TimerEvent: {}
+[56.267455] (-) TimerEvent: {}
+[56.464624] (-) TimerEvent: {}
+[56.619997] (-) TimerEvent: {}
+[56.770998] (-) TimerEvent: {}
+[56.910838] (-) TimerEvent: {}
+[57.055180] (-) TimerEvent: {}
+[57.194602] (-) TimerEvent: {}
+[57.340086] (-) TimerEvent: {}
+[57.486121] (-) TimerEvent: {}
+[57.624545] (-) TimerEvent: {}
+[57.765176] (-) TimerEvent: {}
+[57.889626] (-) TimerEvent: {}
+[58.015713] (-) TimerEvent: {}
+[58.148793] (-) TimerEvent: {}
+[58.278540] (-) TimerEvent: {}
+[58.408576] (-) TimerEvent: {}
+[58.534942] (-) TimerEvent: {}
+[58.662829] (-) TimerEvent: {}
+[58.788160] (-) TimerEvent: {}
+[58.917099] (-) TimerEvent: {}
+[59.037065] (-) TimerEvent: {}
+[59.169516] (-) TimerEvent: {}
+[59.302661] (-) TimerEvent: {}
+[59.429985] (-) TimerEvent: {}
+[59.562046] (-) TimerEvent: {}
+[59.699712] (-) TimerEvent: {}
+[59.835791] (-) TimerEvent: {}
+[59.967621] (-) TimerEvent: {}
+[60.102016] (-) TimerEvent: {}
+[60.240550] (-) TimerEvent: {}
+[60.371704] (-) TimerEvent: {}
+[60.495981] (-) TimerEvent: {}
+[60.623910] (-) TimerEvent: {}
+[60.764724] (-) TimerEvent: {}
+[60.904607] (-) TimerEvent: {}
+[61.046120] (-) TimerEvent: {}
+[61.198349] (-) TimerEvent: {}
+[61.351317] (-) TimerEvent: {}
+[61.496430] (-) TimerEvent: {}
+[61.633045] (-) TimerEvent: {}
+[61.767174] (-) TimerEvent: {}
+[61.897773] (-) TimerEvent: {}
+[62.034583] (-) TimerEvent: {}
+[62.176957] (-) TimerEvent: {}
+[62.314342] (-) TimerEvent: {}
+[62.444145] (-) TimerEvent: {}
+[62.576345] (-) TimerEvent: {}
+[62.707334] (-) TimerEvent: {}
+[62.846495] (-) TimerEvent: {}
+[62.974902] (-) TimerEvent: {}
+[63.102433] (-) TimerEvent: {}
+[63.222860] (-) TimerEvent: {}
+[63.359200] (-) TimerEvent: {}
+[63.490804] (-) TimerEvent: {}
+[63.624172] (-) TimerEvent: {}
+[63.749603] (-) TimerEvent: {}
+[63.874871] (-) TimerEvent: {}
+[63.997601] (-) TimerEvent: {}
+[64.126263] (-) TimerEvent: {}
+[64.263574] (-) TimerEvent: {}
+[64.398284] (-) TimerEvent: {}
+[64.550087] (-) TimerEvent: {}
+[64.681160] (-) TimerEvent: {}
+[64.798256] (-) TimerEvent: {}
+[64.920017] (-) TimerEvent: {}
+[65.036820] (-) TimerEvent: {}
+[65.156746] (-) TimerEvent: {}
+[65.282038] (-) TimerEvent: {}
+[65.415769] (-) TimerEvent: {}
+[65.545632] (-) TimerEvent: {}
+[65.672316] (-) TimerEvent: {}
+[65.808247] (-) TimerEvent: {}
+[66.011577] (-) TimerEvent: {}
+[66.242838] (-) TimerEvent: {}
+[66.352660] (-) TimerEvent: {}
+[66.461296] (-) TimerEvent: {}
+[66.561940] (-) TimerEvent: {}
+[66.668459] (-) TimerEvent: {}
+[66.777109] (-) TimerEvent: {}
+[66.877386] (-) TimerEvent: {}
+[66.978009] (-) TimerEvent: {}
+[67.084287] (-) TimerEvent: {}
+[67.190721] (-) TimerEvent: {}
+[67.298355] (-) TimerEvent: {}
+[67.421155] (-) TimerEvent: {}
+[67.543814] (-) TimerEvent: {}
+[67.657393] (-) TimerEvent: {}
+[67.771839] (-) TimerEvent: {}
+[67.888171] (-) TimerEvent: {}
+[68.000600] (-) TimerEvent: {}
+[68.117437] (-) TimerEvent: {}
+[68.233134] (-) TimerEvent: {}
+[68.355748] (-) TimerEvent: {}
+[68.481641] (-) TimerEvent: {}
+[68.609152] (-) TimerEvent: {}
+[68.737975] (-) TimerEvent: {}
+[68.865383] (-) TimerEvent: {}
+[68.988149] (-) TimerEvent: {}
+[69.105375] (-) TimerEvent: {}
+[69.218739] (-) TimerEvent: {}
+[69.335414] (-) TimerEvent: {}
+[69.450384] (-) TimerEvent: {}
+[69.565096] (-) TimerEvent: {}
+[69.677824] (-) TimerEvent: {}
+[69.787633] (-) TimerEvent: {}
+[69.888167] (-) TimerEvent: {}
+[69.988806] (-) TimerEvent: {}
+[70.089319] (-) TimerEvent: {}
+[70.154674] (turbojet_control) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX executable signal_generator\x1b[0m\n'}
+[70.189418] (-) TimerEvent: {}
+[70.291584] (-) TimerEvent: {}
+[70.391851] (-) TimerEvent: {}
+[70.422773] (turbojet_control) StdoutLine: {'line': b'[ 50%] Built target signal_generator\n'}
+[70.443501] (turbojet_control) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/serial_comm.dir/src/serial_comm.cpp.o\x1b[0m\n'}
+[70.492017] (-) TimerEvent: {}
+[70.592273] (-) TimerEvent: {}
+[70.692807] (-) TimerEvent: {}
+[70.793065] (-) TimerEvent: {}
+[70.893294] (-) TimerEvent: {}
+[70.993579] (-) TimerEvent: {}
+[71.093825] (-) TimerEvent: {}
+[71.194676] (-) TimerEvent: {}
+[71.294959] (-) TimerEvent: {}
+[71.395216] (-) TimerEvent: {}
+[71.495706] (-) TimerEvent: {}
+[71.595963] (-) TimerEvent: {}
+[71.696809] (-) TimerEvent: {}
+[71.797232] (-) TimerEvent: {}
+[71.897997] (-) TimerEvent: {}
+[71.998264] (-) TimerEvent: {}
+[72.098627] (-) TimerEvent: {}
+[72.198928] (-) TimerEvent: {}
+[72.299211] (-) TimerEvent: {}
+[72.399478] (-) TimerEvent: {}
+[72.499809] (-) TimerEvent: {}
+[72.600296] (-) TimerEvent: {}
+[72.700687] (-) TimerEvent: {}
+[72.801190] (-) TimerEvent: {}
+[72.901954] (-) TimerEvent: {}
+[73.002278] (-) TimerEvent: {}
+[73.102728] (-) TimerEvent: {}
+[73.203257] (-) TimerEvent: {}
+[73.304049] (-) TimerEvent: {}
+[73.404814] (-) TimerEvent: {}
+[73.505167] (-) TimerEvent: {}
+[73.608904] (-) TimerEvent: {}
+[73.716717] (-) TimerEvent: {}
+[73.840800] (-) TimerEvent: {}
+[73.958132] (-) TimerEvent: {}
+[74.075288] (-) TimerEvent: {}
+[74.194118] (-) TimerEvent: {}
+[74.311271] (-) TimerEvent: {}
+[74.428075] (-) TimerEvent: {}
+[74.550658] (-) TimerEvent: {}
+[74.669113] (-) TimerEvent: {}
+[74.792015] (-) TimerEvent: {}
+[74.913833] (-) TimerEvent: {}
+[75.030275] (-) TimerEvent: {}
+[75.148015] (-) TimerEvent: {}
+[75.262667] (-) TimerEvent: {}
+[75.376248] (-) TimerEvent: {}
+[75.501322] (-) TimerEvent: {}
+[75.626448] (-) TimerEvent: {}
+[75.754127] (-) TimerEvent: {}
+[75.899992] (-) TimerEvent: {}
+[76.032650] (-) TimerEvent: {}
+[76.187849] (-) TimerEvent: {}
+[76.309720] (-) TimerEvent: {}
+[76.433164] (-) TimerEvent: {}
+[76.559857] (-) TimerEvent: {}
+[76.694565] (-) TimerEvent: {}
+[76.828727] (-) TimerEvent: {}
+[76.955597] (-) TimerEvent: {}
+[77.073056] (-) TimerEvent: {}
+[77.191630] (-) TimerEvent: {}
+[77.311316] (-) TimerEvent: {}
+[77.442141] (-) TimerEvent: {}
+[77.578542] (-) TimerEvent: {}
+[77.713044] (-) TimerEvent: {}
+[77.841021] (-) TimerEvent: {}
+[77.982847] (-) TimerEvent: {}
+[78.164724] (-) TimerEvent: {}
+[78.377917] (-) TimerEvent: {}
+[78.602190] (-) TimerEvent: {}
+[78.731296] (-) TimerEvent: {}
+[78.871348] (-) TimerEvent: {}
+[79.009458] (-) TimerEvent: {}
+[79.159945] (-) TimerEvent: {}
+[79.297542] (-) TimerEvent: {}
+[79.482807] (-) TimerEvent: {}
+[79.616245] (-) TimerEvent: {}
+[79.832932] (-) TimerEvent: {}
+[80.127801] (-) TimerEvent: {}
+[80.276282] (-) TimerEvent: {}
+[80.531514] (-) TimerEvent: {}
+[80.754058] (-) TimerEvent: {}
+[80.968900] (-) TimerEvent: {}
+[81.235242] (-) TimerEvent: {}
+[81.686423] (-) TimerEvent: {}
+[82.184006] (-) TimerEvent: {}
+[82.726133] (-) TimerEvent: {}
+[83.113406] (-) TimerEvent: {}
+[83.587102] (-) TimerEvent: {}
+[84.012790] (-) TimerEvent: {}
+[84.599146] (-) TimerEvent: {}
+[85.349268] (-) TimerEvent: {}
+[85.915200] (-) TimerEvent: {}
+[86.805926] (-) TimerEvent: {}
+[87.735260] (-) TimerEvent: {}
+[88.215916] (-) TimerEvent: {}
+[88.946251] (-) TimerEvent: {}
+[89.792105] (-) TimerEvent: {}
+[90.957894] (-) TimerEvent: {}
+[91.801087] (-) TimerEvent: {}
+[92.623209] (-) TimerEvent: {}
+[93.374158] (-) TimerEvent: {}
+[93.990788] (-) TimerEvent: {}
+[94.563817] (-) TimerEvent: {}
+[95.129679] (-) TimerEvent: {}
+[95.424682] (-) TimerEvent: {}
+[95.742312] (-) TimerEvent: {}
+[96.081405] (-) TimerEvent: {}
+[96.683531] (-) TimerEvent: {}
+[97.095731] (-) TimerEvent: {}
+[97.746590] (-) TimerEvent: {}
+[98.069217] (-) TimerEvent: {}
+[98.276035] (-) TimerEvent: {}
+[98.706275] (-) TimerEvent: {}
+[99.100016] (-) TimerEvent: {}
+[99.618926] (-) TimerEvent: {}
+[99.936150] (-) TimerEvent: {}
+[100.311636] (-) TimerEvent: {}
+[100.574849] (-) TimerEvent: {}
+[100.887166] (-) TimerEvent: {}
+[101.333504] (-) TimerEvent: {}
+[101.686872] (-) TimerEvent: {}
+[101.921586] (-) TimerEvent: {}
+[102.178209] (-) TimerEvent: {}
+[102.330184] (-) TimerEvent: {}
+[102.654589] (-) TimerEvent: {}
+[102.909940] (-) TimerEvent: {}
+[103.102803] (-) TimerEvent: {}
+[103.311525] (-) TimerEvent: {}
+[103.683494] (-) TimerEvent: {}
+[104.005101] (-) TimerEvent: {}
+[104.265297] (-) TimerEvent: {}
+[104.660100] (-) TimerEvent: {}
+[104.949631] (-) TimerEvent: {}
+[105.191875] (-) TimerEvent: {}
+[105.412595] (-) TimerEvent: {}
+[105.545697] (-) TimerEvent: {}
+[105.770175] (-) TimerEvent: {}
+[105.898518] (-) TimerEvent: {}
+[106.024427] (-) TimerEvent: {}
+[106.148727] (-) TimerEvent: {}
+[106.263080] (-) TimerEvent: {}
+[106.370305] (-) TimerEvent: {}
+[106.477088] (-) TimerEvent: {}
+[106.582605] (-) TimerEvent: {}
+[106.683292] (-) TimerEvent: {}
+[106.783734] (-) TimerEvent: {}
+[106.883967] (-) TimerEvent: {}
+[106.984365] (-) TimerEvent: {}
+[107.084724] (-) TimerEvent: {}
+[107.185594] (-) TimerEvent: {}
+[107.285865] (-) TimerEvent: {}
+[107.386139] (-) TimerEvent: {}
+[107.486389] (-) TimerEvent: {}
+[107.586694] (-) TimerEvent: {}
+[107.599117] (turbojet_control) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable serial_comm\x1b[0m\n'}
+[107.686828] (-) TimerEvent: {}
+[107.787195] (-) TimerEvent: {}
+[107.887764] (-) TimerEvent: {}
+[107.899861] (turbojet_control) StdoutLine: {'line': b'[100%] Built target serial_comm\n'}
+[107.913166] (turbojet_control) CommandEnded: {'returncode': 0}
+[107.914536] (turbojet_control) JobProgress: {'identifier': 'turbojet_control', 'progress': 'install'}
+[107.923135] (turbojet_control) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ymzz-tec/code/ros2_serial_control/build/turbojet_control'], 'cwd': '/home/ymzz-tec/code/ros2_serial_control/build/turbojet_control', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7897/'), ('no_proxy', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('LANGUAGE', 'zh_CN:zh:en_US:en'), ('USER', 'ymzz-tec'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks://127.0.0.1:7897/'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ymzz-tec'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('TERM_PROGRAM_VERSION', '1.105.1'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1775'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=5039232659dfe0aeb45ba8266923aabb'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7897/'), ('COLCON_PREFIX_PATH', '/home/ymzz-tec/code/ros2_serial_control/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'ymzz-tec'), ('ALL_PROXY', 'socks://127.0.0.1:7897/'), ('http_proxy', 'http://127.0.0.1:7897/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ymzz-tec'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/ymzz-tec/anaconda3/condabin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/ymzz-tec/.config/Code/User/globalStorage/github.copilot-chat/debugCommand'), ('SESSION_MANAGER', 'local/ymzztec:@/tmp/.ICE-unix/1775,unix/ymzztec:/tmp/.ICE-unix/1775'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('ftp_proxy', 'http://127.0.0.1:7890/'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a0d76916_3234_448d_8842_8ed7ca874082'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PYTHONSTARTUP', '/home/ymzz-tec/.config/Code/User/workspaceStorage/76f978c88a4a9b8062e2416ede6ad218/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-8e8c525e24.sock'), ('GNOME_TERMINAL_SERVICE', ':1.91'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ymzz-tec/code/ros2_serial_control/install/turbojet_control:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/ymzz-tec/anaconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/ymzz-tec/code/ros2_serial_control/build/turbojet_control'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/ymzz-tec/anaconda3/bin/conda'), ('CLUTTER_IM_MODULE', 'xim'), ('FTP_PROXY', 'http://127.0.0.1:7890/'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=5039232659dfe0aeb45ba8266923aabb'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7897/'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ymzz-tec/code/ros2_serial_control/install/turbojet_control:/opt/ros/humble')]), 'shell': False}
+[107.928401] (turbojet_control) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[107.929061] (turbojet_control) StdoutLine: {'line': b'-- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/lib/turbojet_control/signal_generator\n'}
+[107.934125] (turbojet_control) StdoutLine: {'line': b'-- Set runtime path of "/home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/lib/turbojet_control/signal_generator" to ""\n'}
+[107.934264] (turbojet_control) StdoutLine: {'line': b'-- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/lib/turbojet_control/serial_comm\n'}
+[107.936044] (turbojet_control) StdoutLine: {'line': b'-- Set runtime path of "/home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/lib/turbojet_control/serial_comm" to ""\n'}
+[107.936205] (turbojet_control) StdoutLine: {'line': b'-- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/turbojet_control//launch\n'}
+[107.936322] (turbojet_control) StdoutLine: {'line': b'-- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/turbojet_control//launch/turbojet_control.launch.py\n'}
+[107.936624] (turbojet_control) StdoutLine: {'line': b'-- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/turbojet_control//params\n'}
+[107.936671] (turbojet_control) StdoutLine: {'line': b'-- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/turbojet_control//params/serial_params.yaml\n'}
+[107.936734] (turbojet_control) StdoutLine: {'line': b'-- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/include/turbojet_control\n'}
+[107.936821] (turbojet_control) StdoutLine: {'line': b'-- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/include/turbojet_control/signal_generator.hpp\n'}
+[107.936914] (turbojet_control) StdoutLine: {'line': b'-- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/include/turbojet_control/serial_comm.hpp\n'}
+[107.937318] (turbojet_control) StdoutLine: {'line': b'-- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/ament_index/resource_index/package_run_dependencies/turbojet_control\n'}
+[107.937441] (turbojet_control) StdoutLine: {'line': b'-- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/ament_index/resource_index/parent_prefix_path/turbojet_control\n'}
+[107.938208] (turbojet_control) StdoutLine: {'line': b'-- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/turbojet_control/environment/ament_prefix_path.sh\n'}
+[107.938351] (turbojet_control) StdoutLine: {'line': b'-- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/turbojet_control/environment/ament_prefix_path.dsv\n'}
+[107.938498] (turbojet_control) StdoutLine: {'line': b'-- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/turbojet_control/environment/path.sh\n'}
+[107.938650] (turbojet_control) StdoutLine: {'line': b'-- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/turbojet_control/environment/path.dsv\n'}
+[107.938766] (turbojet_control) StdoutLine: {'line': b'-- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/turbojet_control/local_setup.bash\n'}
+[107.938881] (turbojet_control) StdoutLine: {'line': b'-- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/turbojet_control/local_setup.sh\n'}
+[107.939013] (turbojet_control) StdoutLine: {'line': b'-- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/turbojet_control/local_setup.zsh\n'}
+[107.939128] (turbojet_control) StdoutLine: {'line': b'-- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/turbojet_control/local_setup.dsv\n'}
+[107.939295] (turbojet_control) StdoutLine: {'line': b'-- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/turbojet_control/package.dsv\n'}
+[107.939485] (turbojet_control) StdoutLine: {'line': b'-- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/ament_index/resource_index/packages/turbojet_control\n'}
+[107.939551] (turbojet_control) StdoutLine: {'line': b'-- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/turbojet_control/cmake/turbojet_controlConfig.cmake\n'}
+[107.939720] (turbojet_control) StdoutLine: {'line': b'-- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/turbojet_control/cmake/turbojet_controlConfig-version.cmake\n'}
+[107.939808] (turbojet_control) StdoutLine: {'line': b'-- Installing: /home/ymzz-tec/code/ros2_serial_control/install/turbojet_control/share/turbojet_control/package.xml\n'}
+[107.941490] (turbojet_control) CommandEnded: {'returncode': 0}
+[107.957773] (turbojet_control) JobEnded: {'identifier': 'turbojet_control', 'rc': 0}
+[107.958245] (-) EventReactorShutdown: {}

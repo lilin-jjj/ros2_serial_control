@@ -37,30 +37,25 @@ SerialComm::SerialComm(const rclcpp::NodeOptions & options)
     "throttle_signal", 10, 
     std::bind(&SerialComm::throttle_callback, this, std::placeholders::_1));
   
+  // Create subscriber for control commands
+  command_subscription_ = this->create_subscription<std_msgs::msg::String>(
+    "control_command", 10,
+    std::bind(&SerialComm::command_callback, this, std::placeholders::_1));
+  
+  // Initialize engine start time
+  engine_start_time_ = this->now();
+  
   // Start feedback receiving thread
   feedback_thread_ = std::thread(&SerialComm::receive_feedback_thread, this);
   
-  RCLCPP_INFO(this->get_logger(), "SerialComm node started, listening on throttle_signal topic");
+  RCLCPP_INFO(this->get_logger(), "SerialComm node started, listening on throttle_signal and control_command topics");
   RCLCPP_INFO(this->get_logger(), "ECU feedback receiver thread started");
 }
 
 void SerialComm::throttle_callback(const std_msgs::msg::UInt16::SharedPtr msg)
 {
-  // Get current time for SW state calculation
-  auto current_time = this->now();
-  double elapsed = current_time.nanoseconds() / 1e9; // Convert to seconds
-  
-  // Calculate SW state based on time (similar to MATLAB logic)
-  uint8_t SW;
-  if (elapsed < 1.0) {
-    SW = 0;        // Serial not controlled - 不控制引擎（PWM输入控制模式）
-  } else if (elapsed >= 1.0 && elapsed < 3.0) {
-    SW = 2;        // Decimal 2 (binary 10) - 待机状态（超温自动冷却）
-  } else if (elapsed >= 3.0 && elapsed < 560.0) {
-    SW = 3;        // Normal operation (binary 11) - 运行状态
-  } else {
-    SW = 1;        // Backup state - 停止状态（超温不冷却）
-  }
+  // Get SW state based on engine running time
+  uint8_t SW = get_sw_state();
   
   // Limit throttle value to 0-1000 range
   uint16_t throttle_limited = std::max(0, std::min(1000, static_cast<int>(msg->data)));
@@ -305,6 +300,55 @@ void SerialComm::parse_ecu_feedback(const std::vector<uint8_t>& data)
   RCLCPP_INFO(this->get_logger(),
               "[ECU Status] Engine: %s | Error: %s | Temperature: %.1f°C",
               status_str.c_str(), error_str.c_str(), temp_celsius);
+}
+
+void SerialComm::command_callback(const std_msgs::msg::String::SharedPtr msg)
+{
+  std::lock_guard<std::mutex> lock(state_mutex_);
+  
+  std::string command = msg->data;
+  
+  if (command == "start") {
+    engine_started_ = true;
+    engine_start_time_ = this->now();
+    RCLCPP_INFO(this->get_logger(), "Engine started - SW state will follow time sequence");
+  } else if (command == "stop") {
+    engine_started_ = false;
+    RCLCPP_INFO(this->get_logger(), "Engine stopped - SW state set to STOP (1)");
+  } else if (command == "auto" || command == "resume") {
+    // Resume automatic mode without resetting time
+    engine_started_ = true;
+    RCLCPP_INFO(this->get_logger(), "Resumed automatic mode");
+  }
+  // Note: For set/add/sub commands, we don't change engine state
+  // The engine state is managed by start/stop commands
+}
+
+uint8_t SerialComm::get_sw_state()
+{
+  std::lock_guard<std::mutex> lock(state_mutex_);
+  
+  if (!engine_started_) {
+    return 1;  // Stop state - 停止状态（超温不冷却）
+  }
+  
+  // Calculate elapsed time since engine start
+  auto current_time = this->now();
+  double elapsed = (current_time - engine_start_time_).seconds();
+  
+  // Calculate SW state based on engine running time
+  uint8_t SW;
+  if (elapsed < 1.0) {
+    SW = 0;        // Serial not controlled - 不控制引擎（PWM输入控制模式）
+  } else if (elapsed >= 1.0 && elapsed < 3.0) {
+    SW = 2;        // Decimal 2 (binary 10) - 待机状态（超温自动冷却）
+  } else if (elapsed >= 3.0 && elapsed < 560.0) {
+    SW = 3;        // Normal operation (binary 11) - 运行状态
+  } else {
+    SW = 1;        // Backup state - 停止状态（超温不冷却）
+  }
+  
+  return SW;
 }
 
 }  // namespace turbojet_control

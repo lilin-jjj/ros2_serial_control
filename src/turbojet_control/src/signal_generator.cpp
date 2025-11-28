@@ -39,27 +39,50 @@ void SignalGenerator::timer_callback()
 
   {
     std::lock_guard<std::mutex> lk(mutex_);
+    
+    // Debug: Print state every second
+    RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 1000,
+                         "State: override=%d, started=%d, current_throttle=%d",
+                         command_override_, engine_started_, current_throttle_);
+    
     if (command_override_) {
       // command-driven value
       throttle_value = current_throttle_;
+      RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 1000,
+                           "Mode: COMMAND_OVERRIDE, throttle=%d", throttle_value);
     } else if (!engine_started_) {
       // engine not started and no override -> publish 0
       throttle_value = 0;
+      RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 1000,
+                           "Mode: ENGINE_NOT_STARTED, throttle=0");
     } else {
       // Auto/time-driven sequence (use original code)
       auto current_time = this->now();
       double elapsed = (current_time - start_time_).nanoseconds() / 1e9;
 
+      RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 1000,
+                           "Mode: AUTO, elapsed=%.2fs, offset=%.2fs", elapsed, time_offset_);
+
       if (elapsed < 300 + time_offset_) {
         throttle_value = step_signal(elapsed, time_offset_);
+        RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 1000,
+                             "Signal: step_signal(%.2f, %.2f) = %d", elapsed, time_offset_, throttle_value);
       } else if (elapsed >= 300 + time_offset_ && elapsed < 400 + time_offset_) {
         throttle_value = chirp_oscillate(elapsed, time_offset_);
+        RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 1000,
+                             "Signal: chirp_oscillate = %d", throttle_value);
       } else if (elapsed >= 400 + time_offset_ && elapsed < 405 + time_offset_) {
         throttle_value = horizontal_transition(elapsed, time_offset_);
+        RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 1000,
+                             "Signal: horizontal_transition = %d", throttle_value);
       } else if (elapsed >= 405 + time_offset_ && elapsed < 505 + time_offset_) {
         throttle_value = ramp_signal(elapsed, time_offset_);
+        RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 1000,
+                             "Signal: ramp_signal = %d", throttle_value);
       } else {
         throttle_value = 700; // Constant value after 555s
+        RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 1000,
+                             "Signal: constant = 700");
       }
     }
   }

@@ -106,3 +106,68 @@ ros2 topic pub -1 /control_command std_msgs/msg/String "{data: 'auto'}"
 3. 添加命令状态反馈 topic（发布当前模式、油门值等）
 4. 实现命令历史记录和日志功能
 5. 添加单元测试和集成测试
+
+---
+
+# 代码更新说明（2025-11-28）
+
+## 修复 SW 状态计算问题
+
+### 问题描述
+原代码中 SW 状态基于**节点启动时间**计算，导致节点运行超过 560 秒后，SW 状态会一直为 1（停止状态），即使发送 `set 600` 命令也无法正常控制引擎。
+
+### 修复内容
+
+#### 1. 添加引擎状态管理
+- **新增成员变量**：
+  - `engine_started_`: 标记引擎是否启动
+  - `engine_start_time_`: 记录引擎启动时间
+  - `state_mutex_`: 保护引擎状态的互斥锁
+
+#### 2. 订阅 control_command 话题
+`serial_comm` 节点现在也订阅 `control_command` 话题，监听以下命令：
+- **`start`**: 启动引擎，重置启动时间
+- **`stop`**: 停止引擎，SW 状态固定为 1
+- **`auto`/`resume`**: 恢复自动模式（不重置时间）
+
+#### 3. 修正 SW 状态计算逻辑
+新增 `get_sw_state()` 方法：
+- 如果引擎未启动：返回 SW = 1（停止状态）
+- 如果引擎已启动：基于**引擎运行时间**计算 SW 状态
+  - 0-1秒: SW = 0（不控制引擎）
+  - 1-3秒: SW = 2（待机状态）
+  - 3-560秒: SW = 3（运行状态）
+  - >560秒: SW = 1（停止状态）
+
+### 修改的文件
+- `include/turbojet_control/serial_comm.hpp`
+- `src/turbojet_control/src/serial_comm.cpp`
+
+### 使用方法
+
+#### 正确的命令序列
+```bash
+# 1. 先启动引擎（重置时间）
+ros2 topic pub -1 /control_command std_msgs/msg/String "{data: 'start'}"
+
+# 2. 等待 3 秒后（进入运行状态 SW=3），设置油门
+ros2 topic pub -1 /control_command std_msgs/msg/String "{data: 'set 600'}"
+
+# 3. 停止引擎
+ros2 topic pub -1 /control_command std_msgs/msg/String "{data: 'stop'}"
+```
+
+### 预期行为
+- 发送 `start` 后，SW 状态会按时间序列变化：0 → 2 → 3
+- 在 SW=3 期间发送 `set 600`，串口消息中的 SW 字段应为 3（0b11）
+- 发送 `stop` 后，SW 状态固定为 1
+
+### 编译状态
+✓ 编译成功（colcon build --packages-select turbojet_control）
+✓ 仅有未使用参数警告（不影响功能）
+
+### 验证方法
+```bash
+# 查看发送的串口消息（应该看到 SW 状态变化）
+ros2 run turbojet_control serial_comm --ros-args --log-level debug
+```
